@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    background-color: goldenrod;
+    color: paleturquoise;
+    text-align: center;
+	display: flex;
+}
+
+.content {
+    display: flex;
+}
+
+main, section {
+    display: flex;
+    width: 80%;
+}
+
+aside {
+	width: 20%;
+	padding: 20px;
+}
+
+footer {
+    text-align: center;
+    border-top: 20px solid black;
+}
+
+.heat {
+    width: 10%;
+    padding: 5px;
+}
+
+.la {
+    width: 1300px;
+    height: 50px;
+
+}
+
+header, main, nav, footer {
+    padding: 20px;
+}
+
+header .logo {
+	width: 30%;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+header .titulo {
+	width: 70%;
+	padding: 20px;
+}
+
+header.logo img {
+	width: 100%;
+}
+
+form {
+	display: flex ;
+}
+
+.giragira img {
+	padding: 50px;
+	width: 15%;
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-text {
+    	animation: rainbow 2.5s linear;
+		animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}

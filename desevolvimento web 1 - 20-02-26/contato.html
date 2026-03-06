@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="descritivo"
+    <meta name="keywords" content="la criatura, site, palavra, chave, chave-palavra">
+    <meta name="author" content="thiago">
+    <title>shiu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/nao_te_abandona.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section class="logo"><img src="img/transferir.jpg" alt="la criatura"></section>
+            <section class="titulo">La criatura interprises</section>
+        </header>
+        <div class="content">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="o dominio pricnpal de la criatura">Pagina inicial</a></li>
+                <li><a href="contato.html" title="Entre em contato">Fale conosco</a></li>
+                <li><a href="fotos.html" title=":3">Galeria</a></li><li><a href="sobre.html" title="o motivo">Respostas</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <form>
+                    <label for="chamado">pq</label>
+                    <input type="text" id="chamado" required>
+                    <label for="pedido">oq</label>
+                    <input type="text" id="pedido" required>
+
+                    <button type="submit" onclick="">-</button>
+                </form>
+            </section>
+            <aside>
+                <button onclick="splat()">funni</button>
+                <audio id="lancer-splat">
+                    <source src="audio/lancer-splat.mp3" type="audio/mp3">
+                </audio>
+            </aside>
+        </main>
+
+        </div>
+        <footer>
+            <p class="footer-text">footer</p>
+            <img class="la" src="img/transferir.jpg" alt="nada">
+        </footer>
+
+    </div>
+    <script>
+        var lancerSplat = document.getElementById("lancer-splat");
+
+        var counter = 0
+        
+        function splat(){
+            lancerSplat.play();
+            counter += 1
+        }
+
+        function dotdotdot(){
+            if (counter === 7){
+                window.location.href = "end.html";
+            }
+            alert("a")
+        }
+    </script>
+</body>
+</html>
