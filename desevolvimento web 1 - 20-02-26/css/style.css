@@ -1,13 +1,65 @@
-header {
+.navbar-topo {
     display: flex;
     background-color: goldenrod;
     color: paleturquoise;
     text-align: center;
 	display: flex;
+	align-items: center;
+	padding: 15px 40px;
+	justify-content: space-between;
+
+}
+
+.menu-topo {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+
+}
+
+.menu-topo a{
+	color: white;
+	text-decoration:  none;
+	font-weight: bold;
+}
+
+.menu-topo a:hover {
+	color: #880808;
+}
+
+.menu-lateral {
+	flex: 1;
+	border-right: 2px solid black ;
+}
+
+.menu-lateral ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.menu-lateral li{
+	border-bottom: 1px solid black ;
+}
+
+.menu-lateral a {
+	display: block;
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+}
+
+.menu-lateral a:hover{
+	background-color: #880808;
 }
 
 .content {
     display: flex;
+}
+
+main {
+	flex: 4;
 }
 
 main, section {
@@ -36,7 +88,7 @@ footer {
 
 }
 
-header, main, nav, footer {
+header, main, footer {
     padding: 20px;
 }
 
@@ -52,7 +104,7 @@ header .titulo {
 }
 
 header.logo img {
-	width: 100%;
+	width: 50%;
 }
 
 form {
