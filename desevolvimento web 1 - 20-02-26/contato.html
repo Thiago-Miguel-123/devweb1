@@ -37,6 +37,7 @@
                     <input type="text" id="chamado" required>
                     <label for="pedido">oq</label>
                     <input type="text" id="pedido" required>
+                    <input type="text" minlength="500" required hidden>
 
                     <button type="submit" onclick="dotdotdot()">-</button>
                 </form>
@@ -72,7 +73,8 @@
             if (counter == 7 && pedido.value == "bulbasau" && chamado.value == "copiaissonopq"){
                 window.location.href = "end.html";
             }
-            alert(pedido.value, chamado.value)
+            
+            
 
         }
     </script>
