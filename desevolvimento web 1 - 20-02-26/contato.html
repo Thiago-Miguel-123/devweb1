@@ -51,12 +51,14 @@
 
         </div>
         <footer>
-            <p class="footer-text">footer</p>
+            <p class="footer-text">copiaissonopq</p>
             <img class="la" src="img/transferir.jpg" alt="nada">
         </footer>
 
     </div>
     <script>
+        var pedido = document.getElementById("pedido");
+        var chamado = document.getElementById("chamado")
         var lancerSplat = document.getElementById("lancer-splat");
 
         var counter = 0
@@ -67,9 +69,11 @@
         }
 
         function dotdotdot(){
-            if (counter == 7){
+            if (counter == 7 && pedido.value == "bulbasau" && chamado.value == "copiaissonopq"){
                 window.location.href = "end.html";
             }
+            alert(pedido.value, chamado.value)
+
         }
     </script>
 </body>

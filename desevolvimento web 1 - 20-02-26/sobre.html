@@ -38,9 +38,10 @@
             <aside>
                 <ul>
                     <li>charmanda</li>
-                    <li>bulbasau</li>
+                    <li id="escolhido">bulbasau</li>
                     <li>squirtli</li>
                 </ul>
+                <div id="secreto" class="secreto" hidden>oq</div>
             </aside>
         </main>
 
@@ -52,5 +53,22 @@
 
     </div>
     
+    <script>
+        var escolhido = document.getElementById("escolhido")
+        var secreto = document.getElementById("secreto")
+
+        function mouseEnter() {
+            secreto.hidden = false
+        }
+
+        function mouseExit() {
+            secreto.hidden = true 
+        }
+
+        escolhido.addEventListener("mouseenter", mouseEnter);
+        escolhido.addEventListener("mouseleave", mouseExit)
+
+    </script>
+
 </body>
 </html>

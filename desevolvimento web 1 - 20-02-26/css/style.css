@@ -95,6 +95,10 @@ aside {
 	padding: 20px;
 }
 
+.bulba {
+	font-family: "Bitcount Grid Double Ink", system-ui;
+}
+
 footer {
     text-align: center;
     border-top: 20px solid #000000;
@@ -196,4 +200,9 @@ form {
 		91%{
 			color: rgb(255,0,127);
 		}
+}
+
+.secreto {
+	animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;	
 }
