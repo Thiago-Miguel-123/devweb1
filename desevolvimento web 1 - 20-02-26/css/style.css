@@ -206,3 +206,35 @@ form {
 	animation: rainbow 2.5s linear;
 	animation-iteration-count: infinite;	
 }
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	background-color: #ff0101;
+	color: #000000;
+	text-align: center;
+}
+
+thead th {
+	padding: 10px;
+	text-align: center;
+}
+td, th{
+	border: 1px solid #000000;
+}
+
+.dinheiro {
+	color: green;
+	font-weight: bold;
+	font-family: "Sansita", sans-serif;
+}
+
+td{
+	padding: 5px;
+}
+tbody tr:nth-child(even) {
+	background-color: brown;
+}
